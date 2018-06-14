@@ -6,13 +6,15 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" type="text/css" href="pretty.css">
+	<link rel="stylesheet" type="text/css" href="css/pretty.css">
+	<link href="https://fonts.googleapis.com/css?family=Monoton|Poiret+One" rel="stylesheet">
+
 </head>
 <body>
 	<main class="main">
 		<div class="wire left-wire">
-			<img class="wire__img wire__img--1" src="bigWire.png">
-			<img class="wire__img wire__img--2" src="bigWire.png">
+			<img class="wire__img wire__img--1" src="img/bigWire.png">
+			<img class="wire__img wire__img--2" src="img/bigWire.png">
 		</div>
 		<div class="center-zone">
 				<div class="text-top">
@@ -20,8 +22,11 @@
 					<h2 class="text">5/23 - 9:00PM</h2>
 				</div>
 			<div>
-				<div class="volume volume-up" id="vol-up-js"><p>SOUND ON. CLICK TO MUTE</p></div>
-				<div class="volume volume-down" id="vol-down-js"><p>SOUND OFF.CLICK TO PLAY</p></div>
+				<div class="volume volume-up" id="vol-up-js">
+					<svg class="vol-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M256 88.017v335.964c0 21.438-25.943 31.998-40.971 16.971L126.059 352H24c-13.255 0-24-10.745-24-24V184c0-13.255 10.745-24 24-24h102.059l88.971-88.954c15.01-15.01 40.97-4.49 40.97 16.971zm182.056-77.876C422.982.92 403.283 5.668 394.061 20.745c-9.221 15.077-4.473 34.774 10.604 43.995C468.967 104.063 512 174.983 512 256c0 73.431-36.077 142.292-96.507 184.206-14.522 10.072-18.129 30.01-8.057 44.532 10.076 14.528 30.016 18.126 44.531 8.057C529.633 438.927 576 350.406 576 256c0-103.244-54.579-194.877-137.944-245.859zM480 256c0-68.547-36.15-129.777-91.957-163.901-15.076-9.22-34.774-4.471-43.994 10.607-9.22 15.078-4.471 34.774 10.607 43.994C393.067 170.188 416 211.048 416 256c0 41.964-20.62 81.319-55.158 105.276-14.521 10.073-18.128 30.01-8.056 44.532 6.216 8.96 16.185 13.765 26.322 13.765a31.862 31.862 0 0 0 18.21-5.709C449.091 377.953 480 318.938 480 256zm-96 0c0-33.717-17.186-64.35-45.972-81.944-15.079-9.214-34.775-4.463-43.992 10.616s-4.464 34.775 10.615 43.992C314.263 234.538 320 244.757 320 256a32.056 32.056 0 0 1-13.802 26.332c-14.524 10.069-18.136 30.006-8.067 44.53 10.07 14.525 30.008 18.136 44.53 8.067C368.546 316.983 384 287.478 384 256z"/></svg>
+				</div>
+				<div class="volume volume-down" id="vol-down-js">
+						<svg class="vol-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M256 88.017v335.964c0 21.438-25.943 31.998-40.971 16.971L126.059 352H24c-13.255 0-24-10.745-24-24V184c0-13.255 10.745-24 24-24h102.059l88.971-88.954c15.01-15.01 40.97-4.49 40.97 16.971zM384 256c0-33.717-17.186-64.35-45.972-81.944-15.079-9.214-34.775-4.463-43.992 10.616s-4.464 34.775 10.615 43.992C314.263 234.538 320 244.757 320 256a32.056 32.056 0 0 1-13.802 26.332c-14.524 10.069-18.136 30.006-8.067 44.53 10.07 14.525 30.008 18.136 44.53 8.067C368.546 316.983 384 287.478 384 256z"/></svg></div>
 			</div>
 			<!--<svg class="sound"></svg>-->
 			<div class="graphics-container">
@@ -1146,18 +1151,25 @@
 			<div class="bottom-zone">
 				<h1 class="bottom-zone__name">POST MALONE</h1>
 				<div class="buttons-zone">
-					<button class="button button__location">
-						<div class="compass-svg">
+					<div class="button-container">
+						<div class="button button__location">
+							<a href="https://www.visitphilly.com/things-to-do/attractions/penns-landing/" target="_blank">
+							<div class="compass-svg svg">
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM307.446 120.844l-102.642 97.779a23.997 23.997 0 0 0-6.772 11.729l-33.359 137.779c-5.68 23.459 22.777 39.318 39.88 23.024l102.64-97.779a23.99 23.99 0 0 0 6.772-11.729l33.359-137.779c5.618-23.198-22.591-39.493-39.878-23.024zM256 224c-17.673 0-32 14.327-32 32s14.327 32 32 32 32-14.327 32-32-14.327-32-32-32z"/></svg>
+							</div>
+							</a>
 						</div>
-					<span class="button__title">Location</span></button>
-					<button class="button button__website">
-					<div class="skull-svg">
+						<h2 class="label">Location</h2>
+					</div>
+					<div class="button-container">
+						<div class="button button__website">
+							<a href="http://www.postmalone.com/" target="_blank">
+							<div class="skull-svg svg">
 							
-							<svg class="skull" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								<svg class="skull" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 								 width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
-							<g display="none">
-								<g display="inline">
+									<g display="none">
+									<g display="inline">
 									<path fill-rule="evenodd" clip-rule="evenodd" fill="none" d="M141.373,274.858c-41.544,0-83.088-0.011-124.632,0.044
 										c-1.591,0.002-1.823-0.44-1.823-1.896c0.038-83.089,0.04-166.177-0.009-249.266c-0.001-1.591,0.439-1.823,1.896-1.823
 										c83.088,0.038,166.176,0.04,249.265-0.009c1.591-0.001,1.823,0.439,1.822,1.896c-0.038,83.088-0.039,166.177,0.009,249.266
@@ -1217,10 +1229,10 @@
 										c0.015-0.223,0.133-0.438,0.205-0.656c0.081,0.163,0.212,0.32,0.235,0.492c0.285,2.124,0.568,4.249,0.812,6.379
 										c0.032,0.284-0.163,0.595-0.254,0.893c-0.188-0.295-0.498-0.572-0.544-0.888c-0.231-1.594-0.394-3.197-0.58-4.797
 										C152.824,258.456,152.863,258.453,152.902,258.449z"/>
-								</g>
-							</g>
-							<g display="none">
-								<g display="inline">
+									</g>
+									</g>
+									<g display="none">
+									<g display="inline">
 									<path fill-rule="evenodd" clip-rule="evenodd" fill="none" d="M-32.917,302.185c-8.359,0-16.718,0-25.077,0
 										c0-100.123,0-200.245,0-300.368c139.09,0,278.18,0,417.27,0c0,100,0,200,0,299.999c-0.169-0.034-0.363-0.027-0.505-0.108
 										c-3.428-1.977-6.832-3.996-10.28-5.936c-3.049-1.714-6.102-3.43-9.23-4.99c-6.503-3.243-12.99-6.531-19.612-9.519
@@ -1859,10 +1871,10 @@
 										C186.076,156.449,186.081,156.449,187.301,154.993z"/>
 									<path fill-rule="evenodd" clip-rule="evenodd" d="M196.828,134.853c-1.928-1.107-3.804-2.184-5.72-3.284
 										C193.958,131.063,197.145,132.814,196.828,134.853z"/>
-								</g>
-							</g>
-							<g display="none">
-								<g display="inline">
+									</g>
+									</g>
+									<g display="none">
+									<g display="inline">
 									<path fill-rule="evenodd" clip-rule="evenodd" fill="none" d="M272.225,154.655c0,7.426,0,14.853,0,22.288
 										c-87.103,0-174.206,0-261.308,0c0-8.008,0-16.006,0-24.004c2.281,3.971,5.9,5.573,10.288,5.98
 										c3.594,0.333,7.165,0.915,10.757,1.272c5.164,0.515,5.559,1.181,5.081,6.225c-0.284,2.995,0.173,6.06,0.296,9.094
@@ -1907,10 +1919,10 @@
 									<path fill-rule="evenodd" clip-rule="evenodd" fill="none" d="M272.225,151.225c-3.15-2.751-7.088-3.082-10.941-3.212
 										c-6.162-0.209-12.337-0.056-18.792-0.056c0-5.375,0-10.488,0-15.601c9.854,0,19.706,0,29.733,0
 										C272.225,138.644,272.225,144.934,272.225,151.225z"/>
-								</g>
-							</g>
-							<g>
-								<g>
+									</g>
+									</g>
+									<g>
+									<g>
 									<path fill-rule="evenodd" clip-rule="evenodd" fill="none" d="M40.469,159.262c0-51.404,0.016-102.808-0.058-154.212
 										c-0.003-2.113,0.452-2.525,2.537-2.523C114.622,2.593,186.296,2.59,257.97,2.538c1.946-0.001,2.598,0.211,2.596,2.462
 										c-0.078,102.808-0.075,205.615-0.012,308.422c0.001,2.003-0.408,2.379-2.389,2.377c-71.771-0.064-143.542-0.071-215.313,0.02
@@ -2262,11 +2274,15 @@
 										c1.225,1.723,2.419,3.472,3.538,5.265c0.321,0.516,0.587,1.277,0.452,1.819c-0.271,1.085-0.837,2.097-1.281,3.139
 										c-1.184-1.17-2.697-2.163-3.458-3.563c-0.747-1.374-0.527-3.279-2.826-3.439c-0.136-0.009-0.436-1.969-0.125-2.828
 										C81.096,90.234,82.127,89.773,82.941,89.087z"/>
-								</g>
-							</g>
-							</svg>
+									</g>
+									</g>
+									</svg>
+							</div>
+							</a>
 						</div>
-					<span class="button__title">Website</span></button>
+						<h2 class="label">Website</h2>
+					</div>
+					
 				</div>
 				<div class="text-zone">
 					<h2 class="text">PENNS LANDING - PHILADELPHIA, PA</h2>
@@ -2277,11 +2293,11 @@
 			
 		</div>
 		<div class="wire right-wire">
-			<img class="wire__img wire__img--3" src="bigWire.png">
-			<img class="wire__img wire__img--4" src="bigWire.png">
+			<img class="wire__img wire__img--3" src="img/bigWire.png">
+			<img class="wire__img wire__img--4" src="img/bigWire.png">
 		</div>
-		<audio id="audio-js" src="fallApart.mp3"></audio>
+		<audio id="audio-js" src="audio/fallApart.mp3"></audio>
 	</main>
-	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
